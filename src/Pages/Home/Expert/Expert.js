@@ -12,9 +12,6 @@ const Expert = ({ expert }) => {
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-
-
-
         </div>
 
 

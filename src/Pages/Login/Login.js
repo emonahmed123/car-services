@@ -7,6 +7,7 @@ import Loding from '../Shared/Loding/Loding';
 import SocailLogin from './SocailLogin/SocailLogin';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+
 const Login = () => {
   const emailRef = useRef(' ')
   const passwordRef = useRef(' ')
@@ -26,7 +27,7 @@ const Login = () => {
   
   if (user) {
     //  navigate('/home')
-    navigate(from, { replace: true })
+    navigate(from,{ replace: true })
   }
   // if(loading){
   //   return <Loding></Loding>
@@ -36,6 +37,7 @@ const Login = () => {
 
   }
   const [sendPasswordResetEmail, sending,] = useSendPasswordResetEmail(auth );
+  
   const handleSubmit = event => {
     event.preventDefault()
     const email = emailRef.current.value;

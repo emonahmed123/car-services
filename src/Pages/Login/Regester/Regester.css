@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 50%;
 }
-.register-form input:not([type=checkbox]){
+.register-form input :notCheakbox{
     display: block;
     width: 100%;
     height: 40px;
@@ -11,4 +11,5 @@
     border: 1px solid lightgray;
     font-size: 16px;
     margin-bottom: 15px;
+    /* background:#d1d1d1; */
 }

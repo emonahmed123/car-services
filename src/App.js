@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
+import AddService from './Pages/AddService/AddService';
 import Checkout from './Pages/Checkout/Checkout';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Regester from './Pages/Login/Regester/Regester';
 import RequreAuth from './Pages/Login/RequreAuth/RequreAuth';
+import MangeService from './Pages/MangeService/MangeService';
 import ServicesDetails from './Pages/ServicesDetails/ServicesDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -28,6 +30,20 @@ function App() {
                 </RequreAuth>
 
             }></Route>
+            <Route path='/addservice' element={
+                <RequreAuth>
+                    <AddService/>
+                </RequreAuth>
+
+            }></Route>
+
+            <Route path='/mange' element={
+                <RequreAuth>
+                    <MangeService/>
+                </RequreAuth>
+
+            }></Route>
+
              <Route path='/register' element={<Regester/>}></Route>
            <Route path='*' element={<NotFound></NotFound>}></Route>
      </Routes>
